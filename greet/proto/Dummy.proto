@@ -1,0 +1,15 @@
+
+syntax = "proto3";
+
+package greet;
+
+option go_package = "github.com/ProjectCodeWithShubham/Modern_API_GPRC_GOLANG/greet/proto";
+
+
+message Dummy {
+    uint32 id =1;
+}
+
+service DummyService {
+    
+}
