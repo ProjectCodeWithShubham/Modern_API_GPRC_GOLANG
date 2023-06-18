@@ -4,6 +4,7 @@
 PS D:\GRPC\Modern_API_GPRC_GOLANG> protoc --version
 libprotoc 3.12.4
 
+
 PS D:\GRPC\Modern_API_GPRC_GOLANG> go get google.golang.org/protobuf/cmd/protoc-gen-go
 PS D:\GRPC\Modern_API_GPRC_GOLANG> go get google.golang.org/grpc/cmd/protoc-gen-go-grpc
 
@@ -30,4 +31,13 @@ protoc -Igreet/proto --go_out=. --go_opt=module=github.com/ProjectCodeWithShubha
 
 Added Makefile 
 make greet
+
+
+ go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.28
+ grpc
+
+ PS D:\GRPC\Modern_API_GPRC_GOLANG> go mod init github.com/ProjectCodeWithShubham/Modern_API_GPRC_GOLANG        
+go: creating new go.mod: module github.com/ProjectCodeWithShubham/Modern_API_GPRC_GOLANG
+
+
 
