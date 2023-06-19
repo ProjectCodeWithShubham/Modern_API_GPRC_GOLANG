@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 
+	pb "github.com/ProjectCodeWithShubham/Modern_API_GPRC_GOLANG/greet/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )
@@ -17,5 +18,9 @@ func main() {
 	}
 	log.Printf("Client is running.......")
 	defer conn.Close()
+
+	c := pb.NewGreetServiceClient(conn)
+
+	doGreet(c)
 
 }
