@@ -68,3 +68,17 @@ func main() {
 
 
 2023/06/18 23:49:39 Client is running.......
+
+
+
+
+
+PS D:\GRPC\Modern_API_GPRC_GOLANG> .\bin\calculator\server.exe
+2023/06/19 19:43:16 Listening on 0.0.0.0:50051
+2023/06/19 19:43:32 Sum Function was invoked with first_number:1  second_number:3
+
+
+PS D:\GRPC\Modern_API_GPRC_GOLANG> .\bin\calculator\client.exe
+2023/06/19 19:43:32 Client is running.......
+2023/06/19 19:43:32 doSum was invoked and it is client file 
+2023/06/19 19:43:32 Sum: 4
