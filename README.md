@@ -56,7 +56,7 @@ Server has started now client requried
 
 Client setup
 
-after client file -----> binary client file crated 
+after client file -----> binary client file created 
 
 PS D:\GRPC\Modern_API_GPRC_GOLANG> .\bin\greet\client.exe
 2023/06/18 23:44:48 Failed to connect: grpc: no transport security set (use grpc.WithTransportCredentials(insecure.NewCredentials()) explicitly or set credentials) 
