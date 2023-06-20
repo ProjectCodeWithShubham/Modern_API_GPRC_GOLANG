@@ -82,3 +82,31 @@ PS D:\GRPC\Modern_API_GPRC_GOLANG> .\bin\calculator\client.exe
 2023/06/19 19:43:32 Client is running.......
 2023/06/19 19:43:32 doSum was invoked and it is client file 
 2023/06/19 19:43:32 Sum: 4
+
+
+
+
+
+
+RPC server streaming 
+PS D:\GRPC\Modern_API_GPRC_GOLANG> .\bin\greet\server.exe
+2023/06/20 18:19:28 Listening on port address in server main file 0.0.0.0:50051
+2023/06/20 18:19:33 Greet function was invoked with first_name:"Shubham"   
+2023/06/20 18:19:33 GreetManyTimes function was invoked server main with: first_name:"shubham12"
+
+PS D:\GRPC\Modern_API_GPRC_GOLANG> .\bin\greet\client.exe
+2023/06/20 18:19:33 Client is running.......
+2023/06/20 18:19:33 doGreet was invoked and it is client file 
+2023/06/20 18:19:33 Greeting: Hello Shubham
+2023/06/20 18:19:33 doGreetManyTimes was invoked
+2023/06/20 18:19:33 GreetManyTimes: Hello shubham12 , number 0 
+2023/06/20 18:19:33 GreetManyTimes: Hello shubham12 , number 1 
+2023/06/20 18:19:33 GreetManyTimes: Hello shubham12 , number 2 
+2023/06/20 18:19:33 GreetManyTimes: Hello shubham12 , number 3 
+2023/06/20 18:19:33 GreetManyTimes: Hello shubham12 , number 4 
+2023/06/20 18:19:33 GreetManyTimes: Hello shubham12 , number 5 
+2023/06/20 18:19:33 GreetManyTimes: Hello shubham12 , number 6 
+2023/06/20 18:19:33 GreetManyTimes: Hello shubham12 , number 7 
+2023/06/20 18:19:33 GreetManyTimes: Hello shubham12 , number 8 
+2023/06/20 18:19:33 GreetManyTimes: Hello shubham12 , number 9 
+PS D:\GRPC\Modern_API_GPRC_GOLANG> 
