@@ -21,7 +21,7 @@ func main() {
 		log.Fatalf("Failed to listen on : %v\n", err)
 	}
 
-	log.Printf("Listening on %s\n", addr)
+	log.Printf("Listening on port address in server main file %s\n", addr)
 
 	s := grpc.NewServer()
 	pb.RegisterGreetServiceServer(s, &Server{})
