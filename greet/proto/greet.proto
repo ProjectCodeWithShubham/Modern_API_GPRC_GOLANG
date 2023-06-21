@@ -11,7 +11,6 @@ message GreetRequest {
 message GreetResponse {
     string result =1 ;
     double sum=2;
-
 }
 
 message GreetRequest1{
@@ -20,10 +19,18 @@ message GreetRequest1{
 
 message GreetResponse1 {
     string result =1 ;
+}
+
+message GreetRequest2{
+
+}
+
+message GreetResponse2{
 
 }
 
 service GreetService {
     rpc Greet (GreetRequest) returns (GreetResponse);
     rpc GreetManyTimes (GreetRequest1) returns (stream GreetResponse1);
+    rpc LongGreet (stream GreetRequest) returns (GreetResponse);
 } 

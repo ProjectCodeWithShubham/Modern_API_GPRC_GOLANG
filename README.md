@@ -82,3 +82,35 @@ PS D:\GRPC\Modern_API_GPRC_GOLANG> .\bin\calculator\client.exe
 2023/06/19 19:43:32 Client is running.......
 2023/06/19 19:43:32 doSum was invoked and it is client file 
 2023/06/19 19:43:32 Sum: 4
+
+
+
+
+CLient Streaming 
+
+ make greet
+protoc -Igreet/proto --go_opt=module=github.com/ProjectCodeWithShubham/Modern_API_GPRC_GOLANG --go_out=. --go-grpc_opt=module=github.com/ProjectCodeWithShubham/Modern_API_GPRC_GOLANG --go-grpc_out=. greet/proto/*.proto
+go build -o bin/greet/server.exe ./greet/server
+go build -o bin/greet/client.exe ./greet/client
+PS D:\GRPC\Modern_API_GPRC_GOLANG>
+
+
+.\bin\greet\server.exe
+2023/06/21 15:24:01 Listening on port address in server main file 0.0.0.0:50051
+2023/06/21 15:24:09 Long-Greet function was invoked
+
+
+.\bin\greet\client.exe
+2023/06/21 15:24:08 Client is running.......
+2023/06/21 15:24:08 doLongGreet Was invoked
+2023/06/21 15:24:09 Sending req:first_name:"Shubham_client_streaming" 
+2023/06/21 15:24:11 Sending req:first_name:"ujwal_client_streaming"
+
+2023/06/21 15:24:12 Sending req:first_name:"samyak_client_streaming"
+
+2023/06/21 15:24:13 LongGreet: Hello Shubham_client_streaming!
+Hello utkarsh_client_streaming!
+Hello ujwal_client_streaming!
+Hello samyak_client_streaming!
+
+
