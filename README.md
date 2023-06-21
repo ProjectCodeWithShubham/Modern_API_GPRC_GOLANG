@@ -114,3 +114,32 @@ Hello ujwal_client_streaming!
 Hello samyak_client_streaming!
 
 
+
+
+
+Bi-directional Streaming 
+
+make greet
+
+protoc -Igreet/proto --go_opt=module=github.com/ProjectCodeWithShubham/Modern_API_GPRC_GOLANG --go_out=. --go-grpc_opt=module=github.com/ProjectCodeWithShubham/Modern_API_GPRC_GOLANG --go-grpc_out=. greet/proto/*.proto 
+go build -o bin/greet/server.exe ./greet/server
+go build -o bin/greet/client.exe ./greet/client
+
+
+.\bin\greet\server.exe
+2023/06/21 19:19:58 Listening on port address in server main file 0.0.0.0:50051
+2023/06/21 19:20:04 GreetEveryone was invoked :
+
+
+.\bin\greet\client.exe
+2023/06/21 19:20:04 Client is running.......
+2023/06/21 19:20:04 DoGreetEveryone was invoked :
+2023/06/21 19:20:04 Send request: first_name:"jack"
+2023/06/21 19:20:04 Received: Hello jack!
+2023/06/21 19:20:05 Send request: first_name:"ortan"
+2023/06/21 19:20:05 Received: Hello ortan!
+2023/06/21 19:20:06 Send request: first_name:"jhon"
+2023/06/21 19:20:06 Received: Hello jhon!
+PS D:\GRPC\Modern_API_GPRC_GOLANG>
+
+

@@ -22,15 +22,16 @@ message GreetResponse1 {
 }
 
 message GreetRequest2{
-
+    string first_name =1;
 }
 
 message GreetResponse2{
-
+    string result =1 ;
 }
 
 service GreetService {
     rpc Greet (GreetRequest) returns (GreetResponse);
     rpc GreetManyTimes (GreetRequest1) returns (stream GreetResponse1);
     rpc LongGreet (stream GreetRequest) returns (GreetResponse);
+    rpc GreetEveryone(stream GreetRequest2) returns (stream GreetResponse2);
 } 
